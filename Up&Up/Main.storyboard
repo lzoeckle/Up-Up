@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="1Pq-eq-KVE">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Up Up View Controller-->
+        <scene sceneID="K4d-Ec-Mcd">
+            <objects>
+                <viewController id="1Pq-eq-KVE" customClass="Up_UpViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Q9-Ip-2Oc">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6a-l0-c0P">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="YCf-JZ-Eql"/>
+                                    <constraint firstAttribute="width" constant="42" id="tNl-c7-YRe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="uWn-4Z-hd7">
+                                <connections>
+                                    <action selector="valueChanged:" destination="1Pq-eq-KVE" eventType="valueChanged" id="Cg2-bS-19a"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Up&amp;Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o1q-ac-ZD3">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="Nio-E7-JCf"/>
+                                    <constraint firstAttribute="width" constant="243" id="ahB-aX-HQJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="48"/>
+                                <color key="textColor" red="0.056483114920000001" green="0.95422757059999996" blue="0.55109627019999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZV6-Ev-Oi8">
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
+                                <state key="normal" title="Done?">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkDone:" destination="1Pq-eq-KVE" eventType="touchUpInside" id="LRV-Ns-G75"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZV6-Ev-Oi8" firstAttribute="centerX" secondItem="uWn-4Z-hd7" secondAttribute="centerX" type="default" id="3T8-6Y-qdq"/>
+                            <constraint firstAttribute="bottom" secondItem="ZV6-Ev-Oi8" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="IQM-DA-fpS"/>
+                            <constraint firstItem="o1q-ac-ZD3" firstAttribute="centerX" secondItem="g6a-l0-c0P" secondAttribute="centerX" type="default" id="QQm-fe-RIJ"/>
+                            <constraint firstAttribute="bottom" secondItem="uWn-4Z-hd7" secondAttribute="bottom" constant="209" id="Wle-cO-tpq"/>
+                            <constraint firstItem="o1q-ac-ZD3" firstAttribute="top" secondItem="0Q9-Ip-2Oc" secondAttribute="top" constant="62" id="YHP-zk-oXN"/>
+                            <constraint firstItem="g6a-l0-c0P" firstAttribute="top" secondItem="0Q9-Ip-2Oc" secondAttribute="top" constant="177" id="ZtN-Af-Amm"/>
+                            <constraint firstItem="g6a-l0-c0P" firstAttribute="centerX" secondItem="0Q9-Ip-2Oc" secondAttribute="centerX" type="default" id="bs9-6V-sET"/>
+                            <constraint firstItem="uWn-4Z-hd7" firstAttribute="centerX" secondItem="g6a-l0-c0P" secondAttribute="centerX" type="default" id="mPc-uF-Bvm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="R8i-es-vUP"/>
+                    <connections>
+                        <outlet property="doneLabel" destination="o1q-ac-ZD3" id="dwg-oy-bMz"/>
+                        <outlet property="myLabel" destination="g6a-l0-c0P" id="gId-bN-h5V"/>
+                        <segue destination="4Dj-cR-hO9" kind="modal" identifier="finished" modalTransitionStyle="flipHorizontal" id="E0j-b0-I4K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Akg-Pd-9MR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-277" y="-114"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="V7x-rJ-5g9">
+            <objects>
+                <viewController id="4Dj-cR-hO9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VSV-fs-hl6">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vl3-YK-jda">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="173" id="LY6-ip-c0j"/>
+                                    <constraint firstAttribute="width" constant="257" id="upn-Xl-pSA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="80"/>
+                                <state key="normal" title="DONE" backgroundImage="Default.png">
+                                    <color key="titleColor" red="0.8180197011" green="0.019613947570000002" blue="0.048778615900000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RGn-aM-AXg" kind="unwind" unwindAction="unwind:" id="lmi-Yh-0cz"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="skullandcb.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ucj-jf-3VS">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="248" id="GzJ-oT-dCa"/>
+                                    <constraint firstAttribute="width" constant="166" id="puf-BN-gCA"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ucj-jf-3VS" firstAttribute="top" secondItem="VSV-fs-hl6" secondAttribute="top" constant="20" symbolic="YES" type="default" id="Fpa-vS-Nus"/>
+                            <constraint firstItem="Vl3-YK-jda" firstAttribute="centerX" secondItem="VSV-fs-hl6" secondAttribute="centerX" type="default" id="GAK-DV-OVz"/>
+                            <constraint firstAttribute="bottom" secondItem="Vl3-YK-jda" secondAttribute="bottom" constant="25" id="P8h-aB-6Fg"/>
+                            <constraint firstItem="Vl3-YK-jda" firstAttribute="centerX" secondItem="Ucj-jf-3VS" secondAttribute="centerX" type="default" id="wSj-lQ-dOE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="erU-Qp-PtH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="RGn-aM-AXg" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="114" y="-114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Default.png" width="320" height="480"/>
+        <image name="skullandcb.jpg" width="900" height="1389"/>
+    </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="UIStoryboardSegue" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIStoryboardSegue.h"/>
+        </class>
+        <class className="Up_UpViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Up_UpViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="checkDone:" candidateClass="UIButton"/>
+                <relationship kind="action" name="unwind:" candidateClass="UIStoryboardSegue"/>
+                <relationship kind="action" name="valueChanged:" candidateClass="UIStepper"/>
+                <relationship kind="outlet" name="doneLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="myLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C44265B318ADBEC500E52FCC /* Up&UpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C44265B218ADBEC500E52FCC /* Up&UpViewController.m */; };
 		C4633A1C18AC009A00AC4E7E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4633A1B18AC009A00AC4E7E /* UIKit.framework */; };
 		C4633A1E18AC009A00AC4E7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4633A1D18AC009A00AC4E7E /* Foundation.framework */; };
 		C4633A2018AC009A00AC4E7E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4633A1F18AC009A00AC4E7E /* CoreGraphics.framework */; };
@@ -21,6 +22,8 @@
 		C4633A3C18AC009A00AC4E7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4633A1D18AC009A00AC4E7E /* Foundation.framework */; };
 		C4633A4418AC009B00AC4E7E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C4633A4218AC009B00AC4E7E /* InfoPlist.strings */; };
 		C4633A4718AC009B00AC4E7E /* Up_UpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4633A4618AC009B00AC4E7E /* Up_UpTests.m */; };
+		C4633A5118AC013400AC4E7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4633A5018AC013400AC4E7E /* Main.storyboard */; };
+		C4EB7C9318B18A4B00A8AB51 /* skullandcb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4EB7C9218B18A4B00A8AB51 /* skullandcb.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C44265B118ADBEC500E52FCC /* Up&UpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Up&UpViewController.h"; sourceTree = "<group>"; };
+		C44265B218ADBEC500E52FCC /* Up&UpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Up&UpViewController.m"; sourceTree = "<group>"; };
 		C4633A1818AC009A00AC4E7E /* Up&Up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Up&Up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4633A1B18AC009A00AC4E7E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C4633A1D18AC009A00AC4E7E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,6 +58,8 @@
 		C4633A4318AC009B00AC4E7E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C4633A4518AC009B00AC4E7E /* Up_UpTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Up_UpTests.h; sourceTree = "<group>"; };
 		C4633A4618AC009B00AC4E7E /* Up_UpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Up_UpTests.m; sourceTree = "<group>"; };
+		C4633A5018AC013400AC4E7E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C4EB7C9218B18A4B00A8AB51 /* skullandcb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skullandcb.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +121,10 @@
 			children = (
 				C4633A2A18AC009A00AC4E7E /* AppDelegate.h */,
 				C4633A2B18AC009A00AC4E7E /* AppDelegate.m */,
+				C4633A5018AC013400AC4E7E /* Main.storyboard */,
+				C4EB7C9218B18A4B00A8AB51 /* skullandcb.jpg */,
+				C44265B118ADBEC500E52FCC /* Up&UpViewController.h */,
+				C44265B218ADBEC500E52FCC /* Up&UpViewController.m */,
 				C4633A2218AC009A00AC4E7E /* Supporting Files */,
 			);
 			path = "Up&Up";
@@ -227,6 +238,8 @@
 				C4633A2E18AC009A00AC4E7E /* Default.png in Resources */,
 				C4633A3018AC009A00AC4E7E /* Default@2x.png in Resources */,
 				C4633A3218AC009A00AC4E7E /* Default-568h@2x.png in Resources */,
+				C4633A5118AC013400AC4E7E /* Main.storyboard in Resources */,
+				C4EB7C9318B18A4B00A8AB51 /* skullandcb.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +276,7 @@
 			files = (
 				C4633A2818AC009A00AC4E7E /* main.m in Sources */,
 				C4633A2C18AC009A00AC4E7E /* AppDelegate.m in Sources */,
+				C44265B318ADBEC500E52FCC /* Up&UpViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,7 +382,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Up&Up/Up&Up-Prefix.pch";
 				INFOPLIST_FILE = "Up&Up/Up&Up-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -379,7 +395,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Up&Up/Up&Up-Prefix.pch";
 				INFOPLIST_FILE = "Up&Up/Up&Up-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -437,6 +455,7 @@
 				C4633A4C18AC009B00AC4E7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4633A4D18AC009B00AC4E7E /* Build configuration list for PBXNativeTarget "Up&UpTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +464,7 @@
 				C4633A4F18AC009B00AC4E7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
